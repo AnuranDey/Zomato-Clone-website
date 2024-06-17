@@ -1,0 +1,1 @@
+SELECT * FROM shopping_cart.products;

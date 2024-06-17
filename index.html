@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/pin.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/options.css' rel='stylesheet'>
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="top-navbar"> 
+      <div class="bars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <a class="logo-border" href="" ><div class="logo"></div></a>
+      <a class="location" href="#">
+          <i class="gg-pin"></i>
+          Location
+          <select class="location-city"></select>
+      </a>  
+      <div class="nav-search">
+          <div class="search-icon">
+              <i class="gg-search"></i>
+          </div>
+          <input placeholder="Search for restaurant, cuisine or dish" class="search-input">  
+      </div>
+      <div class="right-positioning">
+          <a class="signin" href="#">
+              <i class="gg-user"></i>
+              Sign In
+          </a>
+          <a class="cart-icon" href="cart.html">
+          <i class="gg-shopping-cart"></i>
+          Cart
+          </a>
+      </div>
+  </nav>
+  
+ 
+  <!-- Side Navigation Panel -->
+  <nav class="side-nav">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Specials</a></li>
+    <li><a href="#">Links</a></li>
+    <li><a href="#">Contact</a></li>
+    <!-- Add more links here -->
+    </ul>
+</nav>
+<!-- Best offer Navbar -->
+    <nav class="best-offers-navbar">
+      <h2 class="best-offers-title">Best offers for you</h2>
+      <div class="best-offers-items">
+        <div class="bestoffer" >
+          <a class="bestoffer-item1" href="#" style="background-image:url('offer_images/greenOffer.webp') ;"></a>
+        </div>
+        <div class="bestoffer" >
+          <a class="bestoffer-item2" href="#" style="background-image:url('offer_images/redOffer.webp');"></a>
+        </div>
+        <div class="bestoffer" >
+          <a class="bestoffer-item3" href="#" style="background-image:url('offer_images/violetOffer.webp');"></a>
+        </div>
+      </div>
+      <!-- Add more categories here -->
+    </nav>
+
+    <div class="container">
+     <div class="food-type-heading">
+      <h2>What's on your mind?</h2>
+    </div>
+    </div>
+ 
+    
+    <div class="food-type-wrapper">
+      <div class="scroll-arrow left-arrow">&lt;</div> 
+      <div class="navigation-wrapper1">
+        <nav class="food-type">
+          <div class="food-type-container"> 
+              <div class="row">
+                <div class="row-item1">
+                  <a class="row-item1" href="#" style="background-image:url('foodtype_images/Chole_Bature.webp');"></a>
+                </div>
+                <div class="row-item2">
+                  <a class="row-item2" href="#" style="background-image:url('foodtype_images/Pizza.webp');"></a>
+                </div>
+                <div class="row-item3">
+                  <a class="row-item3" href="#" style="background-image:url('foodtype_images/Burger.webp');"></a>
+                </div>
+                <div class="row-item4">
+                  <a class="row-item4" href="#" style="background-image:url('foodtype_images/Cakes.webp');"></a>
+                </div>
+                <div class="row-item5">
+                  <a class="row-item5" href="#" style="background-image:url('foodtype_images/Rolls.webp');"></a>
+                </div>
+                <div class="row-item6">
+                  <a class="row-item6" href="#" style="background-image:url('foodtype_images/Pastry.webp');"></a>
+                </div>
+                <div class="row-item7">
+                  <a class="row-item7" href="#" style="background-image:url('foodtype_images/Shawarma.webp');"></a>
+                </div>
+                <div class="row-item8">
+                  <a class="row-item8" href="#" style="background-image:url('foodtype_images/South_Indian_4.webp');"></a>
+                </div>
+                <div class="row-item9">
+                  <a class="row-item9" href="#" style="background-image:url('foodtype_images/Kachori.webp');"></a>
+                </div>
+                <div class="row-item10">
+                  <a class="row-item10" href="#" style="background-image:url('foodtype_images/Pasta.webp');"></a>
+                </div>
+                <div class="row-item11">
+                  <a class="row-item11" href="#" style="background-image:url('foodtype_images/Pav_Bhaji.webp');"></a>
+                </div>
+                <div class="row-item12">
+                  <a class="row-item12" href="#" style="background-image:url('foodtype_images/Shakes.webp');"></a>
+                </div>
+                <div class="row-item13">
+                  <a class="row-item13" href="#" style="background-image:url('foodtype_images/Dosa.webp');"></a>
+                </div>
+                <div class="row-item14">
+                  <a class="row-item14" href="#" style="background-image:url('foodtype_images/Momos.webp');"></a>
+                </div>
+                <div class="row-item15">
+                  <a class="row-item15" href="#" style="background-image:url('foodtype_images/Pakodas.webp');"></a>
+                </div>
+                <div class="row-item16">
+                  <a class="row-item16" href="#" style="background-image:url('foodtype_images/Sandwich.webp');"></a>
+                </div>
+                <div class="row-item17">
+                  <a class="row-item17" href="#" style="background-image:url('foodtype_images/Pure_Veg.webp');"></a>
+                </div>
+                <div class="row-item18">
+                  <a class="row-item18" href="#" style="background-image:url('foodtype_images/Chinese.webp');"></a>
+                </div>
+                <div class="row-item19">
+                  <a class="row-item19" href="#" style="background-image:url('foodtype_images/Noodles2.jpeg');"></a>
+                </div>
+                <div class="row-item19">
+                  <a class="row-item19" href="#" style="background-image:url('foodtype_images/Paratha.webp');"></a>
+                </div>
+                <div class="row-item19">
+                  <a class="row-item19" href="#" style="background-image:url('foodtype_images/Khichdi.webp');"></a>
+                </div>
+                <div class="row-item19">
+                  <a class="row-item19" href="#" style="background-image:url('foodtype_images/Coffee.webp');"></a>
+                </div>
+                <div class="row-item19">
+                  <a class="row-item19" href="#" style="background-image:url('foodtype_images/Idli.webp');"></a>
+                </div>
+                <div class="row-item19">
+                  <a class="row-item19" href="#" style="background-image:url('foodtype_images/Dosa.webp');"></a>
+                </div>
+                <div class="row-item19">
+                  <a class="row-item19" href="#" style="background-image:url('foodtype_images/Samosas.webp');"></a>
+                </div>
+            </div>            
+            </div>
+        </nav>
+      </div>
+      <div class="scroll-arrow right-arrow">&gt;</div>
+    </div>
+
+    <div class="container">
+      <div class="divider">
+        <hr>
+      </div>
+    <div class="pop-brands-heading">
+      <h2>Top brands for you</h2>
+    </div>
+    </div>
+    <!-- Next Nabar - Popular Items (Categories) -->
+    
+    <div class="pop-brands-wrapper">
+      <div class="scroll-arrow-pop left-arrow-pop">&lt;</div> 
+        <div class="navigation-wrapper2">
+          <nav class="pop-brands">
+            <div class="pop-brands-container">
+                <div class="row2">
+                  <div class="row2-item1">
+                    <a class="row2-item1" href="#" style="background-image:url('brand_images/KFC.png');"></a>
+                    <p class="row2-item1">KFC</p>
+                  </div>
+                  <div class="row2-item2">
+                    <a class="row2-item2" href="#" style="background-image:url('brand_images/Dominos.png');"></a>
+                    <p class="row2-item2">Dominos</p>
+                  </div>
+                  <div class="row2-item3">
+                    <a class="row2-item3" href="#" style="background-image:url('brand_images/WOW.png');"></a> 
+                    <p class="row2-item3">Wow Momo</p>       
+                  </div>
+                  <div class="row2-item4">
+                    <a class="row2-item4" href="#" style="background-image:url('brand_images/Chowman.webp');"></a>
+                    <p class="row2-item4">Chowman</p>
+                  </div>
+                  <div class="row2-item5">
+                    <a class="row2-item5" href="#" style="background-image:url('brand_images/KW.png');"></a>
+                    <p class="row2-item5">Kwality Walls</p>
+                  </div>
+                  <div class="row2-item6">
+                    <a class="row2-item6" href="#" style="background-image:url('brand_images/Arsalan.png');"></a>
+                    <p class="row2-item6">Arsalan</p>
+                  </div>
+                  <div class="row2-item7">
+                    <a class="row2-item7" href="#" style="background-image:url('brand_images/Burger_king.png');"></a>
+                    <p class="row2-item7">Burger King</p>
+                  </div>
+                  <div class="row2-item8">
+                    <a class="row2-item8" href="#" style="background-image:url('brand_images/Gupta_Brothers.png');"></a>
+                    <p class="row2-item8">Gupta Brothers</p>
+                  </div>
+                  <div class="row2-item9">
+                    <a class="row2-item9" href="#" style="background-image:url('brand_images/Kasturi.png');"></a>
+                    <p class="row2-item9">Kasturi</p>
+                  </div>
+                  <div class="row2-item10">
+                    <a class="row2-item10" href="#" style="background-image:url('brand_images/dabba.png');"></a>
+                    <p class="row2-item10">Edabba</p>
+                  </div>
+                  <div class="row2-item11">
+                    <a class="row2-item11" href="#" style="background-image:url('brand_images/subway.png');"></a>
+                    <p class="row2-item11">Subway</p>
+                  </div>
+                  <div class="row2-item12">
+                    <a class="row2-item12" href="#" style="background-image:url('brand_images/PH.png'); "></a>
+                    <p class="row2-item12">Pizza Hut</p>
+                  </div>
+                </div>                   
+              </div>
+          </nav>
+        </div>
+      <div class="scroll-arrow-pop right-arrow-pop">&gt;</div>
+    </div>
+    
+    <div class="container">
+      <div class="divider">
+        <hr>
+      </div>
+    </div>
+   
+
+    <div class="container">
+      <!-- Next Navbar - Popular Brands for Food -->
+      <div class="Top-Restaurant-heading">
+          <h2>Top Restaurants in Kolkata</h2>
+      </div>
+    </div>
+     <!-- Next Navbar - Filter (Categories) -->
+  <nav class="filter1">
+    <div class="filter1-contents">
+          <div class="Filters" >
+            <i class="gg-options"></i>
+            Filters
+          </div>
+          <div class="Rating">
+            Rating 4.0+
+          </div>
+          <div class="Cuisines">
+            Cuisines
+            <select class="Cuisines-select"></select>
+          </div>
+          <!-- Add more categories here -->
+    </div>
+  </nav>
+  <div class="container">
+      <!-- Food Item Boxes -->
+          <div class="food-item-boxes">
+              <div class="food-item">
+              <img src="images/1.png" alt="Item 1">
+              <h3>Botanik</h3>
+              <p>Continetal,Asian,Chinese</p>
+              <p class="restaurant">Thai veg green curry</p>
+              <div class="rating-box">4.5
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/2.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.2
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/3.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.3
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/29.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.4
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/5.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.1
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/6.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.0
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/7.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.3
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/8.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.5
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/9.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.3
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/10.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.2
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/11.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.2
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/12.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.1
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/13.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.5
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/14.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.6
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/15.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.4
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/16.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.3
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/17.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.0
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/18.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.7
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/19.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.7
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/20.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.6
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/21.webp" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.2
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/22.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.0
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/23.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.8
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/24.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.6
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/25.png"alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.3
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/26.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.2
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/27.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.5
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/28.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.1
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/29.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.0
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/30.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.6
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/31.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.2
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/32.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.1
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/33.jpeg" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.5
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/34.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.3
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/35.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.6
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/36.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.1
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/37.jpeg" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.1
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/38.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.0
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/39.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.2
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/40.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.3
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/41.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.0
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/42.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.7
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/43.jpeg" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.5
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+              <div class="food-item">
+              <img src="images/29.png" alt="Item 2">
+              <h3>Item 2 Name</h3>
+              <p>Small crisp details about Item 2.</p>
+              <p class="restaurant">Restaurant Name</p>
+              <div class="rating-box">4.5
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="add-to-cart-btn">ADD TO CART</button>
+              </div> 
+              <!-- Add more food items here -->
+          </div>
+    </div>
+  <!-- Footer navbar -->
+  <div class="footer-navbar">
+
+    <div class="footer-navbar-title">
+      <div class="title">
+        Order now, we have ongoing offer, download our app
+      </div>
+    </div>
+
+    <div class="footer-navbar-logo">
+      <a class="footer-icon1" href="#"><img src="google-play.png" class="icon1"></a>
+      <a class="footer-icon2" href="#"><img src="app-store.png" class="icon2"></a>
+    </div>
+  </div>
+
+   <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h3>About Us</h3>
+      Some information about the company and project.
+    </div>
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +1 123-456-7890</p>
+    </div>
+    <div class="footer-section">
+      <h3>Partner With Us</h3>
+      <p>Interested in partnering with us? Reach out!</p>
+    </div>
+    <div class="footer-section">
+      <h3>Learn More</h3>
+      <p>Find out more about our services and offerings.</p>
+    </div>
+    <div class="footer-last-section footer-section">
+      <div class="social-icons">
+        <!-- Add social media links here -->
+        <a href="#" class="facebook"><img src="facebook.png" ></a>
+        <a href="#" class="twitter"><img src="twitter.png" alt=""></a>
+        <a href="#" class="instagram"><img src="instagram.jpg" alt=""></a>
+      </div>
+      <div class="footer-section copyright">
+        <p>&copy; 2023 Zomato. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
