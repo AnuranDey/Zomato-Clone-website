@@ -1,0 +1,825 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding:0 210px 0 210px ;
+  }
+  
+  /* Top Navbar Styles */
+  .top-navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 2px 2px 17px 5px rgb(194, 194, 194);
+
+  }
+  .bars{
+      margin-left: 43px;
+      margin-right: 44px;
+  }
+  .bars i{
+    position: relative;
+    top: 3px;
+    font-size: 1.9rem;
+  }
+  .bars i:hover{
+    border-radius: 20%;
+    color: #ffffff;
+    background-color: rgb(224, 75, 75);
+  }
+  .logo{
+    border-radius: 7%;
+    background-image: url("zomato.png");
+    background-size: cover;
+    width: 130px;
+    height: 45px;
+  }
+  
+  .top-navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .top-navbar a.logo-border{
+   padding: 3px 3px ;
+  }
+  .top-navbar a:last-child {
+    margin-right: 0;
+  }
+  .top-navbar a.cart-icon {
+    border: 1px solid #333;
+    display: flex;
+    background-color: #fff;
+    color: #c21a0b;
+    padding: 8px 12px;
+  }
+  
+  .top-navbar a.location {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 125px;
+  }
+  .signin{
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+  }
+  .location-city {
+    background-color: white;
+    border: none;
+    margin-left: 1px;
+    color: black;
+    
+  }
+  .nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 520px;
+    height: 40px;
+    border: 1px solid #9C9C9C;
+    border-radius: 10px;
+    
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:white;
+    color: black;
+}
+.right-positioning{
+    display: flex;
+    margin-left: 500px;
+    align-items: center;
+    }
+
+
+    .nav-search:hover{
+    border: 2px solid rgb(202, 104, 74);
+}
+
+.top-navbar a.signin{
+    position:relative;
+
+    
+}
+  .top-navbar a.cart-icon:hover{
+   background-color: #d3b012;
+   color: white;
+  }
+  
+  .top-navbar a.logo-border:hover{
+   background-color: rgb(236, 190, 37);
+   color: white;
+  }
+  
+  .top-navbar a:hover {
+    background-color: #cc5249;
+    color: #f8f8f8;
+  }
+  .location-city:hover{
+    background-color: #cc5249;
+    color: #f8f8f8;
+  }
+  .top-navbar a.logo:hover{
+    background-color: rgba(136, 136, 75, 0.856);
+  }
+
+
+  /* 2nd  Navbar i.e filter */
+  .filter1{
+    width: 100%;
+    position:sticky;
+    background-color: #f8f8f8;
+    height: 75px;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    box-shadow: 3px 3px 8px 2px rgba(27, 30, 36, 0.2);
+    left: 0;
+    right: 0;
+  }
+  .filter1-contents{
+    background-color: #f8f8f8;
+    color: #9C9C9C;
+    font-size: 0.9rem;
+    display: flex;
+    position: relative;
+    top: -19px;
+    left: 226px;
+    
+  }
+  .Filters{
+    border-radius: 10%;
+    width: 80px;
+    height: 37px;
+    border: 1px solid #9C9C9C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Rating{
+    margin-left: 11px;
+    border-radius: 10%;
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 6px;
+    border: 1px solid #9C9C9C;
+  }
+  .Cuisines{
+    margin-left: 11px;
+    border-radius: 10%;
+    width: 85px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    border: 1px solid #9C9C9C;    
+  }
+  .Cuisines-select{
+    background-color: #f8f8f8;
+    border: none;
+    color: rgb(170, 170, 170);
+  }
+  
+  /* Best Offers for you (Categories) Navbar Styles */
+  .best-offers-navbar {
+    height: 38vh;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .best-offers-title{
+    position: relative;
+    align-self:flex-start;
+    top:-10px;
+    left: 226px;
+  }
+  .best-offers-items{
+    position: relative;
+    width: 80%;
+    top: -5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .bestoffer{
+    display: flex;
+    position: relative;
+    width: 20vw;
+    height: 24vh;
+  }
+  .bestoffer a{
+    position: relative;
+    background-size: cover;
+    height: 230px;
+    width: 389px;
+    max-width: 100%;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    box-shadow: 5px 6px 20px 2px rgba(109, 109, 109, 0.6);
+  }
+
+  /* Side Navigation Styles */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -280px; /* Initially hide the side navigation to the left */
+    width: 280px;
+    height: 100vh; /* Make the side navigation cover the full height of the viewport */
+    background-color: rgb(190, 190, 190); /* White background */
+    padding-top: 60px; /* Add some padding for the top logo area */
+    z-index: 3; /* Set a higher z-index to show the side navigation above other elements */
+    transition: all 0.6s ease-in 0s; /* Add the animation transition */
+  }
+
+  .side-nav ul{
+    list-style-type: none;
+    padding-top: 20%;
+    margin: 0;
+  }
+  
+  .side-nav li {
+    padding: 10px 10px 10px 30px;
+  }
+  
+  .side-nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  /* Adjust the position of the side navigation when the logo is hovered */
+  .top-navbar .logo:hover + .side-nav {
+    left: 0; /* Show the side navigation panel */
+  }
+  
+  /* What's on your mind Navbar Styles */
+.food-type-heading{
+  padding-top: 15px;
+}
+
+  .food-type-wrapper{ 
+    width: 81.8%;
+    padding-left: 192px;
+    padding-bottom: 20px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+  }
+
+  .food-type-container{
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    font-size: 16px;  
+  }
+  .navigation-wrapper1 {
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
+  }
+  
+  .navigation-wrapper2 {
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
+  }
+
+  .row{
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    
+  }
+  .row div{
+    display: flex;
+    padding-right: 24px;
+
+  }
+  .row a:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+  .row a{
+    background-size: cover;
+    height: 220px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 20px 2px rgba(109, 109, 109, 0.6);
+  }
+
+  .row-item1{
+    margin-left: 8px;
+  }
+  /* Top Brands for you Styles */
+
+  .pop-brands-heading{
+    padding-top: 15px;
+  }
+ 
+  .pop-brands-wrapper{
+    width: 81.8%;
+    padding-left: 192px;
+    padding-bottom: 40px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+  }
+ 
+
+  .pop-brands-container{
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    font-size: 16px;
+  }
+ 
+  .row2{
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    height: 270px;
+   align-items: flex-end;
+    
+  }
+  .row2 div{
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+  }
+  .row2 a:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+  .row2 a{
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 6px 20px 2px rgba(109, 109, 109, 0.6);
+  }
+
+  .row2 p{
+    text-align: center;
+  }
+
+  .row2-item1{
+    margin-left: 8px;
+  }
+  /* Wrapper arrow css for food-type*/
+  .scroll-arrow {
+    width: 20px;
+    height: 40px;
+    text-align:center;
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    z-index: 1; /* Set a higher z-index to keep the arrows above other elements */
+  }
+
+/* Wrapper arrow css for pop-brands */
+.scroll-arrow-pop {
+  width: 20px;
+  height: 40px;
+  text-align:center;
+  position: relative;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0px 11px 0px 11px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  z-index: 1; /* Set a higher z-index to keep the arrows above other elements */
+}
+
+.left-arrow-pop {
+  box-shadow: -3px 2px 8px 3px rgb(29, 29, 29,0.4);
+}
+
+.right-arrow-pop {
+  box-shadow: 3px 2px 8px 3px rgb(29, 29, 29,0.4);
+}
+
+  .scroll-arrow:hover{
+    background-color: rgb(219, 219, 219);
+    color: white;
+  }
+  .scroll-arrow-pop:hover{
+    background-color: rgb(219, 219, 219);
+    color: white;
+  }
+
+.left-arrow {
+    box-shadow: -3px 2px 8px 3px rgb(29, 29, 29,0.4);
+}
+
+.right-arrow {
+    box-shadow: 3px 2px 8px 3px rgb(29, 29, 29,0.4);
+}
+
+/* ... (Rest of the CSS code) ... */
+
+  /* Popular Brands Navbar Styles */
+   .Top-Restaurant-heading{
+    background-color: #f8f8f8;
+    position: relative;
+    left: 15px;
+    font-size: 16px;
+  }
+
+  .divider hr{
+    border: 1.4px solid rgb(223, 223, 223);
+  }
+
+  /* Food Item Boxes Styles */
+  .food-item-boxes {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .food-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .food-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .food-item h3 {
+    margin-top: 10px;
+    color: #ff6f61;
+  }
+  
+  .food-item p {
+    color: #777;
+  }
+  
+  /* Rating Box Styles */
+.rating-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 3px 8.5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .rating-box i{
+    position: relative;
+    font-size: 0.65rem;
+    bottom:1.1px;
+  }
+
+  /* Animation on hover for Food Item Boxes */
+  .food-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Style for the "ADD TO CART" button */
+.add-to-cart-btn {
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(60, 170, 170);
+  color:#f8f8f8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.food-item:hover .add-to-cart-btn{
+  display: block;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ebb133;
+  border: 1px solid #333;
+  color: #333
+}
+
+/* Adjust the restaurant name to prevent excessive height */
+.food-item .restaurant {
+  max-height: 40px; /* Set a maximum height for the restaurant name */
+  overflow: hidden; /* Hide any overflowing text */
+}
+
+  /* Footer-navbar Styles */
+.footer-navbar{
+  background-color: rgb(240, 240, 245);
+  height: 104px;
+  margin-top:34px;
+  display: flex;
+  justify-content: center;
+}
+.footer-navbar-title
+{
+  display: flex;
+  margin:20px 96px 20px 0px;
+  width: 408px;
+  height: 40px;
+}
+.title{
+  height: 40px;
+  letter-spacing: -0.6px;
+  justify-self: flex-start;
+  font-weight: 800;
+ font-size: 1.3em;
+}
+.footer-navbar-logo{
+  width: 435.81px;
+  height: 64px;
+  display: flex;
+  margin: 20px 8px 20px 8px;
+}
+.footer-navbar-logo a{
+  background-size: cover;
+  display: flex;
+  margin: 0px 12px 0px 12px;
+}
+.icon1{
+  height: 60px;
+  width: 200px;
+}
+.icon2{
+  height: 60px;
+  width: 200px;
+}
+
+  /* Footer Styles */
+  footer {
+    height: 420px;
+    background-color: rgb(2, 6, 12);
+    color: #fff;
+    padding: 0px 17.5% 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    font-size: 14px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+  }
+  .footer-section{
+    padding-top: 50px;
+  }
+  
+
+  footer h3{
+    color: rgb(243, 243, 243);
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-section img{
+      height: 20px;
+      background-size: cover;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  .footer-last-section{
+    grid-column-start: span 4;
+    align-self: center;
+  }
+  
+  /* Social Media Icons Styles */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  /* Google Play and App Store Icons Styles */
+  .app-store-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .app-store-icons img {
+    width: 150px;
+    margin: 10px;
+  }
+  
+  /* Copyright Styles */
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    padding:unset;
+  }
+  
+  /* Additional Animations */
+  @keyframes Grow {
+    from {
+      opacity: 0;
+      transform: scale(0,0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1,1);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+/* Additional Animations */
+/* Animation for top-navbar links */
+
+  
+  /* Animation for popular-items-navbar links */
+  .best-offers-navbar a{
+    transition: background-color 0.3s ease;
+  }
+
+  .filter1-contents div{
+    animation: fadeInUp 0.6s ease;
+
+  }
+  .best-offers-items div{
+    animation: fadeInUp 0.6s ease;
+  }  
+
+
+  /* Footer Social Icons Animation */
+  .social-icons a {
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Footer Google Play and App Store Icons Animation */
+  .app-store-icons img {
+    transition: all 0.3s ease;
+  }
+  
+  .app-store-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animation for food-item-boxes */
+  .food-item img{
+    animation: Grow 0.6s ease;
+  }
+
+  .row div{
+    animation: Grow 0.6s ease;
+  }
+  .row2 div{
+    animation: Grow 0.5s ease;
+  }
+
+  /* Animation for footer sections */
+
+  
+  /* Make the footer sections align at the center on smaller screens */
+  @media screen and (max-width: 768px) {
+    .top-navbar {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center all elements */
+        padding: 10px 0; /* Reduce vertical padding */
+      }
+    
+      .right-positioning {
+        /* Adjust the margin-left for the right-positioning div to create space */
+        margin-left: 0;
+        margin-top: 10px; /* Add some space between the elements */
+      }
+    
+      .top-navbar a.cart-icon {
+        /* Reset the margin and change the positioning to stack the cart icon below other elements */
+        margin-right: 0;
+        position: static;
+        display: block;
+      }
+    
+      /* Add margin to create space between the links in mobile mode */
+      .top-navbar a:not(.cart-icon) {
+        margin-bottom: 10px;
+      }
+    
+
+    footer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  
+  /* Additional Styles */
+  /* Style for top-navbar cart icon */
+
+  
+  /* Style for food-item box details */
+  .food-item p.restaurant {
+    margin-bottom: 5px;
+    font-style: italic;
+  }
+  
+  .food-item p.rating {
+    font-weight: bold;
+    color: #ff6f61;
+  }
+  
+  /* Style for footer social media icons */
+  .social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Style for footer app store icons */
+  .app-store-icons img {
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Style for footer copyright information */
+  .footer-section.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+  }
